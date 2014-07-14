@@ -1434,8 +1434,8 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
     sleep 1
 
     # Adjustments for items
-    (( CHAR_ITEMS >= 5 )) && (( ACCURACY++ )) # item4: Quick Rabbit Reaction
-    (( CHAR_ITEMS >= 6 )) && (( EN_FLEE++ ))  # item5: Flask of Terrible Odour
+    (( CHAR_ITEMS > 3 )) && (( ACCURACY++ )) # item4: Quick Rabbit Reaction
+    (( CHAR_ITEMS > 4 )) && (( EN_FLEE++ ))  # item5: Flask of Terrible Odour
 
     if (( EN_ACCURACY > ACCURACY )); then # DETERMINE INITIATIVE (will usually be enemy)
 	echo "The $ENEMY has initiative"
@@ -1447,7 +1447,7 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 
     sleep 2
 
-    (( CHAR_ITEMS >= 5 )) && (( ACCURACY--)) # Resets Quick Rabbit Reaction setting..
+    (( CHAR_ITEMS > 3 )) && (( ACCURACY--)) # Resets Quick Rabbit Reaction setting..
 
     # GAME LOOP: FIGHT LOOP
     while (( FIGHTMODE > 0 )) # If player didn't manage to run
