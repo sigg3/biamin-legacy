@@ -902,16 +902,19 @@ GX_Map() { # Used in MapNav()
     }' <<< "$MAP"
 }
 # SAVE CHARSHEET
-SaveCurrentSheet() { # Saves current game values to CHARSHEET file (overwriting)
-    echo "CHARACTER: $CHAR
-RACE: $CHAR_RACE
-BATTLES: $CHAR_BATTLES
-EXPERIENCE: $CHAR_EXP
-LOCATION: $CHAR_GPS
-HEALTH: $CHAR_HEALTH
-ITEMS: $CHAR_ITEMS
-KILLS: $CHAR_KILLS
-HOME: $CHAR_HOME" > "$CHARSHEET"
+SaveCurrentSheet() { # Saves current game values to CHARSHEET file (NOT overwriting, just replace defined variables)
+    local CHAR_TMP=$(awk '{ 
+    if (/^CHARACTER:/)  { $0 = "CHARACTER: " "'$CHAR'" ;}
+    if (/^RACE:/)       { $2 = "'$CHAR_RACE'"}
+    if (/^BATTLES:/)    { $2 = "'$CHAR_BATTLES'"}
+    if (/^EXPERIENCE:/) { $2 = "'$CHAR_EXP'"}
+    if (/^LOCATION:/)   { $2 = "'$CHAR_GPS'"}
+    if (/^HEALTH:/)     { $2 = "'$CHAR_HEALTH'"}
+    if (/^ITEMS:/)      { $2 = "'$CHAR_ITEMS'"}
+    if (/^KILLS:/)      { $2 = "'$CHAR_KILLS'"}
+    if (/^HOME:/)       { $2 = "'$CHAR_HOME'"}
+    print }' "$CHARSHEET" )
+    echo "$CHAR_TMP" > "$CHARSHEET"
 }
 
 # CHAR SETUP
