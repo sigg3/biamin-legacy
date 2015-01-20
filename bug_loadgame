@@ -1,0 +1,144 @@
++ VERSION='1.4 LEGACY'
++ WEBURL=http://sigg3.net/biamin/
++ GAMEDIR=/home/sigg3/.biamin
++ unset HISTFILE
++ START_LOCATION=C2
++ DISABLE_CHEATS=0
++ REPO_EDITION=legacy
++ HR='- ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ '
++ case "$1" in
++ echo 'Launching Back in a Minute..'
++ [[ ! -d /home/sigg3/.biamin ]]
++ [[ ! -f /home/sigg3/.biamin/config ]]
++ echo 'Putting on the traveller'\''s boots..'
++ read -r GAMEDIR COLOR
+++ awk '{ if (/^GAMEDIR:/)  { GAMEDIR= $2 }
+                                   if (/^COLOR:/)    { COLOR = $2  } }
+                            END { print GAMEDIR " " COLOR ;}' /home/sigg3/.biamin/config
++ case "$COLOR" in
++ echo 'Enabling color for maps!'
++ ((  COLOR == 1  ))
++ YELLOW='\033[1;33m'
++ RESET='\033[0m'
++ trap CleanUp SIGHUP SIGINT SIGTERM
++ SetupHighscore
++ HIGHSCORE=/home/sigg3/.biamin/highscore
++ [[ -f /home/sigg3/.biamin/highscore ]]
++ grep -q d41d8cd98f00b204e9800998ecf8427e /home/sigg3/.biamin/highscore
++ MainMenu
++ true
++ GX_Banner
++ GX_BiaminTitle
++ clear
++ cat
++ cat
++ echo '- ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ '
++ read -sn 1 -p '      (P)lay      (L)oad game      (H)ighscore      (C)redits      (Q)uit' TOPMENU_OPT
+      (P)lay      (L)oad game      (H)ighscore      (C)redits      (Q)uit+ case "$TOPMENU_OPT" in
++ LoadGame
++ local i=0
+++ find /home/sigg3/.biamin/ -name '*.sheet'
+++ xargs ls -t
++ for loadSHEET in '$(find "$GAMEDIR"/ -name '\''*.sheet'\'' | xargs ls -t)'
++ SHEETS[((++i))]=debug
++ for loadSHEET in '$(find "$GAMEDIR"/ -name '\''*.sheet'\'' | xargs ls -t)'
++ SHEETS[((++i))]=biamin.sh
++ for loadSHEET in '$(find "$GAMEDIR"/ -name '\''*.sheet'\'' | xargs ls -t)'
++ SHEETS[((++i))]=archive
++ [[ ! -n debug biamin.sh archive ]]
++ local LIMIT=9
++ local OFFSET=0
++ true
++ GX_LoadGame
++ clear
++ cat
++ echo '- ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ '
++ (( a=1 ))
++ (( a <= LIMIT  ))
++ [[ ! -n debug ]]
++ awk '{ # Character can consist from two and more words - not only "Corum" but "Corum Jhaelen Irsei" for instance 
+                   if (/^CHARACTER:/)  { RLENGTH = match($0,/: /);
+                  	                 CHARACTER = substr($0, RLENGTH+2); }
+                   if (/^RACE:/)       { if ($2 == 1 ) { RACE="Human"; }
+               		                 if ($2 == 2 ) { RACE="Elf"; }
+             		                 if ($2 == 3 ) { RACE="Dwarf"; }
+            		                 if ($2 == 4 ) { RACE="Hobbit";} 
+                                        }
+                   if (/^LOCATION:/)   { LOCATION = $2 }
+                   if (/^HEALTH:/)     { HEALTH = $2 }
+                   if (/^ITEMS:/)      { ITEMS = $2 }
+                   if (/^EXPERIENCE:/) { EXPERIENCE = $2 }
+                 }
+                 END { 
+                 print " "1 ". \"" CHARACTER "\" the " RACE " (" HEALTH " HP, " EXPERIENCE " EXP, " ITEMS " items, sector " LOCATION ")" 
+                 }' debug
++ (( a++ ))
++ (( a <= LIMIT  ))
++ [[ ! -n biamin.sh ]]
++ awk '{ # Character can consist from two and more words - not only "Corum" but "Corum Jhaelen Irsei" for instance 
+                   if (/^CHARACTER:/)  { RLENGTH = match($0,/: /);
+                  	                 CHARACTER = substr($0, RLENGTH+2); }
+                   if (/^RACE:/)       { if ($2 == 1 ) { RACE="Human"; }
+               		                 if ($2 == 2 ) { RACE="Elf"; }
+             		                 if ($2 == 3 ) { RACE="Dwarf"; }
+            		                 if ($2 == 4 ) { RACE="Hobbit";} 
+                                        }
+                   if (/^LOCATION:/)   { LOCATION = $2 }
+                   if (/^HEALTH:/)     { HEALTH = $2 }
+                   if (/^ITEMS:/)      { ITEMS = $2 }
+                   if (/^EXPERIENCE:/) { EXPERIENCE = $2 }
+                 }
+                 END { 
+                 print " "2 ". \"" CHARACTER "\" the " RACE " (" HEALTH " HP, " EXPERIENCE " EXP, " ITEMS " items, sector " LOCATION ")" 
+                 }' biamin.sh
++ (( a++ ))
++ (( a <= LIMIT  ))
++ [[ ! -n archive ]]
++ awk '{ # Character can consist from two and more words - not only "Corum" but "Corum Jhaelen Irsei" for instance 
+                   if (/^CHARACTER:/)  { RLENGTH = match($0,/: /);
+                  	                 CHARACTER = substr($0, RLENGTH+2); }
+                   if (/^RACE:/)       { if ($2 == 1 ) { RACE="Human"; }
+               		                 if ($2 == 2 ) { RACE="Elf"; }
+             		                 if ($2 == 3 ) { RACE="Dwarf"; }
+            		                 if ($2 == 4 ) { RACE="Hobbit";} 
+                                        }
+                   if (/^LOCATION:/)   { LOCATION = $2 }
+                   if (/^HEALTH:/)     { HEALTH = $2 }
+                   if (/^ITEMS:/)      { ITEMS = $2 }
+                   if (/^EXPERIENCE:/) { EXPERIENCE = $2 }
+                 }
+                 END { 
+                 print " "3 ". \"" CHARACTER "\" the " RACE " (" HEALTH " HP, " EXPERIENCE " EXP, " ITEMS " items, sector " LOCATION ")" 
+                 }' archive
+awk: warning: command line argument `archive' is a directory: skipped
++ (( a++ ))
++ (( a <= LIMIT  ))
++ [[ ! -n '' ]]
++ break
++ ((  i > LIMIT ))
++ echo -e '\n Enter NUMBER of character to load or any letter to return to (M)ain Menu: '
++ read -sn 1 NUM
++ case "$NUM" in
++ NUM=0
++ break
++ [[ ! -n '' ]]
++ unset NUM SHEETS i
++ return 1
++ true
++ GX_Banner
++ GX_BiaminTitle
++ clear
++ cat
++ cat
++ echo '- ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ '
++ read -sn 1 -p '      (P)lay      (L)oad game      (H)ighscore      (C)redits      (Q)uit' TOPMENU_OPT
+      (P)lay      (L)oad game      (H)ighscore      (C)redits      (Q)uit+ case "$TOPMENU_OPT" in
++ CleanUp
++ GX_BiaminTitle
++ clear
++ cat
++ echo -e '\n- ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ '
++ [[ -n '' ]]
++ [[ -n '' ]]
++ echo -e '\nLeaving the realm of magic behind ....\nPlease submit bugs and feedback at <http://sigg3.net/biamin/>'
++ exit 0
