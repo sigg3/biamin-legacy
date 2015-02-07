@@ -1748,7 +1748,7 @@ Announce() { # Simply outputs a 160 char text you can cut & paste to social medi
     echo -en "\nSelect the highscore (1-10) you'd like to display or CTRL+C to cancel: "
     read SCORE_TO_PRINT
 
-    (( SCORE_TO_PRINT < 1 )) && (( SCORE_TO_PRINT > 10 )) && Die "\nOut of range. Please select an entry between 1-10. Quitting.."
+    (( SCORE_TO_PRINT < 1 || SCORE_TO_PRINT > 10 )) && Die "\nOut of range. Please select an entry between 1-10. Quitting.."
 
     RollDice 6
     case $DICE in
