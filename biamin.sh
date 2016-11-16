@@ -1520,7 +1520,7 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 			RollDice 6
 			EchoFightFormula 6 le eA
 			if (( DICE <= EN_ACCURACY )); then
-			    (( DICE == FLEE )) && echo -n "$DICE =" || echo -n "$DICE <"
+			    (( DICE == EN_ACCURACY )) && echo -n "$DICE =" || echo -n "$DICE <"
 			    echo -n " $EN_ACCURACY ) The $ENEMY blocks your escape route!"
 			    sleep 1
 			else # Player managed to flee
