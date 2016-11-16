@@ -1462,16 +1462,16 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 	    echo "You WERE KILLED by the $ENEMY, and now you are dead..."
 	    sleep 2
 	    if (( CHAR_EXP >= 1000 )) && (( CHAR_HEALTH > -15 )); then
+		(( CHAR_HEALTH += 20 ))
 		echo "However, your $CHAR_EXP Experience Points relates that you have"
 		echo "learned many wondrous and magical things in your travels..!"
-		(( CHAR_HEALTH += 20 ))
 		echo "+20 HEALTH: Health restored by 20 points (HEALTH: $CHAR_HEALTH)"
 		LUCK=2
 		sleep 8
 	    elif (( CHAR_ITEMS >= 3 )) && (( CHAR_HEALTH > -5 )); then
+		(( CHAR_HEALTH += 5 ))
 		echo "Suddenly you awake again, SAVED by your Guardian Angel!"
 		echo "+5 HEALTH: Health restored by 5 points (HEALTH: $CHAR_HEALTH)"
-		(( CHAR_HEALTH += 5 ))
 		LUCK=2
 		sleep 8
 	    else      # DEATH!
