@@ -58,21 +58,21 @@ HR="- ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ - ~ 
 GX_BiaminTitle() { # Used in GX_Banner(), GX_Credits(), GX_HowTo() and License() !
     clear
     cat <<"EOT"
-            ______                                                     
-          (, /    )       /)     ,                    ,               
-            /---(  _   _ (/_      __     _     ___     __      _/_  _ 
+            ______
+          (, /    )       /)     ,                    ,
+            /---(  _   _ (/_      __     _     ___     __      _/_  _
          ) / ____)(_(_(__/(__  _(_/ (_  (_(_   // (__(_/ (_(_(_(___(/_
-        (_/ (   
+        (_/ (
 EOT
-}  
+}
 
 GX_Banner() {
     GX_BiaminTitle
     cat <<"EOT"
-                                                     ___________(  )_ 
+                                                     ___________(  )_
                                                     /   \      (  )  \
-                                                   /     \     |`|    \   
-                                                  /   _   \      ~ ^~  \ ~ ^~  
+                                                   /     \     |`|    \
+                                                  /   _   \      ~ ^~  \ ~ ^~
                                                  /|  |.|  |\___ (     ) (     )
                                                   |  | |  |    ( (     ) (     )
                                              """"""";::;"""""""(    )  )    )  )
@@ -81,7 +81,7 @@ GX_Banner() {
                                                ;:;:;:;            | |     | |
                                             ,;;;;;;;,            """""  """"""
 
-                    
+
           /a/ |s|i|m|p|l|e| /b/a/s/h/ |a|d|v|e|n|t|u|r|e| /g/a/m/e/
 
               Sigg3.net (C) 2014 CC BY-NC-SA 4.0 and GNU GPL v.3
@@ -91,8 +91,8 @@ EOT
 
 GX_Credits() {
     GX_BiaminTitle
-    cat <<"EOT" 
-          
+    cat <<"EOT"
+
    Back in a minute is an adventure game with 4 playable races, 6 enemies,
    8 items and 6 scenarios spread across the 270 sections of the world map.
    Biamin saves character sheets between sessions and keeps a highscore!
@@ -103,7 +103,7 @@ EOT
    This timekiller's written entirely in BASH. It was intended for sysadmins
    but please note that it isn't console-friendly and it looks best in 80x24
    terminal emulators (white on black). Make sure it's a window you can close.
-      
+
    BASH code (C) Sigg3.net GNU GPL Version 3 2014
    ASCII art (C) Sigg3.net CC BY-NC-SA 4.0 2014 (except figlet banners)
 
@@ -116,20 +116,20 @@ EOT
 GX_HowTo() {
     GX_BiaminTitle
     cat <<"EOT"
-    
+
                           HOW TO PLAY Back in a Minute
 
    Go to Main Menu and hit (P)lay and enter the NAME of the character you want
    to create or whose character sheet you want to load (case-sensitive).
    You enter the World of Back in a Minute. The first sector is Home.
-   
+
    Each sector gives you these action alternatives:
    (C)haracter sheet: Toggle Character Sheet
    (R)est: Sleep to gain health points
    (M)ap and travel: Toggle Map to find yourself, items and to travel
    (Q)uit: Save current status and quit the world of Back in a Minute
    Use W, A, S, D keys to travel North, West, South or East directly.
-      
+
    Travelling and resting involves the risk of being attacked by the creatures
    inhabiting the different scenarios. Some places are safer than others.
 EOT
@@ -140,12 +140,12 @@ EOT
 GX_HighScore() {
     clear
     cat <<"EOT"
-         _________     _    _ _       _                            
-        |o x o x o|   | |__| (_) __ _| |__  ___  ___ ___  _ __ ___ 
+         _________     _    _ _       _
+        |o x o x o|   | |__| (_) __ _| |__  ___  ___ ___  _ __ ___
          \_*.*.*_/    |  __  | |/ _` | '_ \/ __|/ __/ _ \| '__/ _ \
            \-.-/      | |  | | | (_| | | | \__ \ (_| (_) | | |  __/
            _| |_      |_|  |_|_|\__, |_| |_|___/\___\___/|_|  \___|
-          |_____|                |___/                              
+          |_____|                |___/
                                        Y e   H a l l e   o f   F a m e
 EOT
     echo "$HR"
@@ -154,14 +154,14 @@ EOT
 GX_LoadGame() {
     clear
     cat << "EOT"
-        ___________ 
-       (__________()   _                    _    ____                      
-       / ,,,,,,,  /   | |    ___   __ _  __| |  / ___| __ _ _ __ ___   ___ 
+        ___________
+       (__________()   _                    _    ____
+       / ,,,,,,,  /   | |    ___   __ _  __| |  / ___| __ _ _ __ ___   ___
       / ,,,,,,,  /    | |   / _ \ / _` |/ _` | | |  _ / _` | '_ ` _ \ / _ \
      / ,,,,,,,  /     | |__| (_) | (_| | (_| | | |_| | (_| | | | | | |  __/
    _/________  /      |_____\___/ \__,_|\__,_|  \____|\__,_|_| |_| |_|\___|
-  (__________(/ 
- 
+  (__________(/
+
 
 EOT
     echo "$HR"
@@ -170,13 +170,13 @@ EOT
 GX_CharSheet() {
     clear
     cat <<"EOT"
- 
-                               /T\                           /""""""""\ 
+
+                               /T\                           /""""""""\
       o-+----------------------------------------------+-o  /  _ ++ _  \
         |/                                            \|   |  / \  / \  \
         |  C  H  A  R  A  C  T  E  R     S  H E  E  T  |   | | , | |, | |
         |                                              |   | |   |_|  | |
-        |\             s t a t i s t i c s            /|    \|   ...; |; 
+        |\             s t a t i s t i c s            /|    \|   ...; |;
       o-+----------------------------------------------+-o    \______/
 
 EOT
@@ -187,15 +187,15 @@ GX_Death() {
     clear
     cat <<"EOT"
 
-     
+
          __   _  _  _/_   ,  __
-        / (__(/_/_)_(__  _(_/ (_    __    _  _   _   _                __ 
+        / (__(/_/_)_(__  _(_/ (_    __    _  _   _   _                __
                                     /_)__(/_(_(_(___(/_              /\ \
-                                 .-/                                /  \ \   
-         YOU ARE A STIFF,       (_/           # #  # #  # # #      /  \/\ \  
-         PUSHING UP THE DAISIES          # # #  # # # # # # #  #  /   /\ \_\ 
-         YOU ARE IRREVOCABLY DEAD     # # # # # #  # # # # #  # # \  /   / / 
-                                    # # # # # # # # # ## # # # # # \    / /     
+                                 .-/                                /  \ \
+         YOU ARE A STIFF,       (_/           # #  # #  # # #      /  \/\ \
+         PUSHING UP THE DAISIES          # # #  # # # # # # #  #  /   /\ \_\
+         YOU ARE IRREVOCABLY DEAD     # # # # # #  # # # # #  # # \  /   / /
+                                    # # # # # # # # # ## # # # # # \    / /
          Better luck next time!   # # # # #  # # # # # # # # #  # # \  / /
                                  # # #  #  # # # # # # # # # # # # # \/_/
                                    # #  # # # # # # ## # # # # ## #
@@ -208,20 +208,20 @@ EOT
 GX_Intro() {
     clear
     cat <<"EOT"
-                                                                         
-       YOU WAKE UP TO A VAST AND UNFAMILIAR LANDSCAPE !                   
-                                                                          
-       Use the MAP to move around                                         
-       REST to regain health points                                             
-                                 ___                ^^                /\        
-       HOME, TOWNS and the    __/___\__                   ^^         /~~\      
+
+       YOU WAKE UP TO A VAST AND UNFAMILIAR LANDSCAPE !
+
+       Use the MAP to move around
+       REST to regain health points
+                                 ___                ^^                /\
+       HOME, TOWNS and the    __/___\__                   ^^         /~~\
        CASTLE are safest       _(   )_                           /\ /    \  /\
                               /       \    1                  __/  \      \/  \
 ___                          (         \__ 1                _/             \   \
    \________                  \       L___| )           @ @ @ @ @@ @ @@ @
             \_______________   |     |     1     @ @ @ @@ @ @ @@ @ @ @ @ @@ @
                             \__|  |  |_____1____                    @ @ @@ @@ @@
-                               |  |  |_    1    \___________________________  
+                               |  |  |_    1    \___________________________
                                |__| ___\   1                                \___
 EOT
     echo "$HR"
@@ -234,13 +234,13 @@ GX_Races() {
                         C H A R A C T E R   R A C E S :
 
       1. MAN            2. ELF              3. DWARF            4. HOBBIT
- 
-   Healing:  3/6      Healing:  4/6       Healing:  2/6        Healing:  4/6   
+
+   Healing:  3/6      Healing:  4/6       Healing:  2/6        Healing:  4/6
    Strength: 3/6      Strength: 3/6       Strength: 5/6        Strength: 1/6
    Accuracy: 3/6      Accuracy: 4/6       Accuracy: 3/6        Accuracy: 4/6
    Flee:     3/6      Flee:     1/6       Flee:     2/6        Flee:     3/6
-   
-   
+
+
    Dice rolls on each turn. Accuracy also initiative. Healing during resting.
 
 EOT
@@ -250,20 +250,20 @@ EOT
 GX_Castle() {
     clear
     cat <<"EOT"
-                             __   __   __                         __   __   __ 
+                             __   __   __                         __   __   __
                             |- |_|- |_| -|   ^^                  |- |_|- |_|- |
                             | - - - - - -|                       |- - - - - - |
                              \_- - - - _/    _       _       _    \_ - - - -_/
-         O L D B U R G         |- - - |     |~`     |~`     |~`     | - - -| 
-         C A S T L E           | - - -|  _  |_   _  |_   _  |_   _  |- - - | 
-                               |- - - |_|-|_|-|_|-|_|-|_|-|_|-|_|-|_| - - -| 
-         Home of The King,     | - - -|- - - - - -_-_-_-_- - - - - -|- - - | 
-         The Royal Court and   |- - - | - - - - //        \ - - - - | - - -| 
-         other silly persons.  | - - -|- - - - -||        |- - - - -|- - - | 
-                               |- - - | - - - - ||        | - - - - | - - -| 
-                               | - - -|- - - - -||________|- - - - -|- - - | 
-                               |- - - | - - - - /        /- - - - - | - - -| 
-                               |_-_-_-_-_-_-_-_/        /-_-_-_-_-_-_-_-_-_| 
+         O L D B U R G         |- - - |     |~`     |~`     |~`     | - - -|
+         C A S T L E           | - - -|  _  |_   _  |_   _  |_   _  |- - - |
+                               |- - - |_|-|_|-|_|-|_|-|_|-|_|-|_|-|_| - - -|
+         Home of The King,     | - - -|- - - - - -_-_-_-_- - - - - -|- - - |
+         The Royal Court and   |- - - | - - - - //        \ - - - - | - - -|
+         other silly persons.  | - - -|- - - - -||        |- - - - -|- - - |
+                               |- - - | - - - - ||        | - - - - | - - -|
+                               | - - -|- - - - -||________|- - - - -|- - - |
+                               |- - - | - - - - /        /- - - - - | - - -|
+                               |_-_-_-_-_-_-_-_/        /-_-_-_-_-_-_-_-_-_|
                                               7________/
 EOT
     echo "$HR"
@@ -272,7 +272,7 @@ EOT
 GX_Town() {
     clear
     cat <<"EOT"
-                                                           ___ 
+                                                           ___
                                                           / \_\   town house
                                  zig's inn                | | |______
          YOU HAVE REACHED   ______________________________| | |\_____\____
@@ -292,15 +292,15 @@ GX_Forest() {
     clear
     cat <<"EOT"
                                                                     /\
-                                                                   //\\     
-                                        /\  /\               /\   /\/\/\ 
+                                                                   //\\
+                                        /\  /\               /\   /\/\/\
                                        /  \//\\             //\\ //\/\\/\
-         YOU'RE IN THE WOODS          /    \^#^\           /\/\/\/\^##^\/\      
-                                     /      \#            //\/\\/\  ##      
-         It feels like something    /\/^##^\/\        .. /\/^##^\/\ ##      
-         is watching you ..             ##        ..::;      ##     ##      
+         YOU'RE IN THE WOODS          /    \^#^\           /\/\/\/\^##^\/\
+                                     /      \#            //\/\\/\  ##
+         It feels like something    /\/^##^\/\        .. /\/^##^\/\ ##
+         is watching you ..             ##        ..::;      ##     ##
                                         ##   ..::::::;       ##
-                                       ....::::::::;;        ## 
+                                       ....::::::::;;        ##
                                    ...:::::::::::;;
                                 ..:::::::::::::::;
 EOT
@@ -313,11 +313,11 @@ GX_Mountains() {
 
 
                                            ^^      /\  /\_/\/\
-         YOU'RE TRAVELLING IN           ^^     _  /~~\/~~\~~~~\   
+         YOU'RE TRAVELLING IN           ^^     _  /~~\/~~\~~~~\
          THE MOUNTAINS                        / \/    \/\      \
-                                             /  /    ./  \ /\   \/\ 
-         The calls of the wilderness  ............:;'/    \     /  
-         turn your blood to ice        '::::::::::; /     
+                                             /  /    ./  \ /\   \/\
+         The calls of the wilderness  ............:;'/    \     /
+         turn your blood to ice        '::::::::::; /
 
 
 
@@ -329,10 +329,10 @@ EOT
 GX_Home() {
     clear
     cat <<"EOT"
-                                                     ___________(  )_ 
+                                                     ___________(  )_
                                                     /   \      (  )  \
-                                                   /     \     |`|    \   
-                                                  /   _   \      ~ ^~  \ ~ ^~  
+                                                   /     \     |`|    \
+                                                  /   _   \      ~ ^~  \ ~ ^~
          MY HOME IS MY CASTLE                    /|  |.|  |\___ (     ) (     )
                                                   |  | |  |    ( (     ) (     )
          You are safe here                   """"""";::;"""""""(    )  )    )  )
@@ -349,17 +349,17 @@ GX_Road() {
     clear
     cat <<"EOT"
                              /V/V7/V/\V\V\V\
-                            /V/V/V/V/V/V/V\V\                ,      ^^ 
+                            /V/V/V/V/V/V/V\V\                ,      ^^
                            /7/V/V/V###V\V\V\V\    ^^      , /X\           ,
                                    ###     ,____________ /x\ T ____  ___ /X\ ___
-         ON THE ROAD AGAIN         ###   ,-               T        ; ;    T  
+         ON THE ROAD AGAIN         ###   ,-               T        ; ;    T
                               ____ ### ,-______  ., . . . . , ___.'_;_______
          Safer than the woods      ###        .;'          ;                \_
-         but beware of robbers!            .:'            ;                   \ 
+         but beware of robbers!            .:'            ;                   \
                                         .:'              ;   ___               `
-                                *,    .:'               .:  | 3 |     
-                               `)    :;'                :; '"""""'    
-                                   .;:                   `::.            
+                                *,    .:'               .:  | 3 |
+                               `)    :;'                :; '"""""'
+                                   .;:                   `::.
 EOT
     echo "$HR"
 }
@@ -369,13 +369,13 @@ GX_Rest() {
     cat <<"EOT"
 
 
-                                                          _.._    
+                                                          _.._
                                *         Z Z Z   *       -'-. '.             *
-                                                             \  \          
+                                                             \  \
          YOU TRY TO GET                                .      | |
-         SOME MUCH NEEDED REST    *                    ;.___.'  /     *    
-                                    Z Z    *            '.__ _.'          * 
-                            *                                               
+         SOME MUCH NEEDED REST    *                    ;.___.'  /     *
+                                    Z Z    *            '.__ _.'          *
+                            *
 
 
 
@@ -386,19 +386,19 @@ EOT
 GX_Monster_chthulu() {
     clear
     cat <<"EOT"
-                        \ \_|\/\     ________      / /            \ \ 
+                        \ \_|\/\     ________      / /            \ \
                          \ _    \   /        \    /  /             \ \
-         T H E            \ \____\_|          \--/  /__   ____      \ \ 
+         T H E            \ \____\_|          \--/  /__   ____      \ \
          M I G H T Y       \_    _|            |       ) / __ )      \ \
                              \  / \    .\  /.  |        / |  (_   __  \ \
-         C H T H U L U ' S    \/    \         /       _/ /|  | \_/  )  \ \     
-                              /   _/         \      / _/   \/   /-/|    \ \     
+         C H T H U L U ' S    \/    \         /       _/ /|  | \_/  )  \ \
+                              /   _/         \      / _/   \/   /-/|    \ \
          W R A T H   I S     /   //.(/((| |\(\\    / /          \/ |     \ \   (
          U P O N   Y O U    /   / ||__ "| |   \|  |_ |----------L /       \ \ _/
                            /   /  \__/  | |/|      \_) \        |/         \_/
                           /   /     |    \_/            \               __(
                           |   (      |                   \           __(
-                          \|\|\\      |                   `         (  
+                          \|\|\\      |                   `         (
 
 EOT
     echo "$HR"
@@ -435,7 +435,7 @@ GX_Monster_varg() {
                                                ____.:      :.
                                         _____.:               \___
          YOU ENCOUNTER A         _____/  _  )      __            :.__
-         TERRIBLE VARG!         |       7             `      _       \ 
+         TERRIBLE VARG!         |       7             `      _       \
                                   ^^^^^ \    ___        1___ /        |
          It looks hungry.           ^^^^  __/   |    __/    \1     /\  |
                                      \___/     /   _|        |    / | /  _
@@ -464,8 +464,8 @@ GX_Monster_mage() {
                                              || \   /^\ \ ______/  ___   \
          "Lorem ipsum dolor sit amet..."     ||  \_/  |           /  __   |
                                              ||       |          |  /__|  |
-                                             ||       |          \  |__/  | 
-                                             ||      /            \_____/ 
+                                             ||       |          \  |__/  |
+                                             ||      /            \_____/
                                              ^      /               \
                                                    |        \        \
 EOT
@@ -478,13 +478,13 @@ GX_Monster_goblin() {
                                                     _______                   _
                                                    (       )/|    ===[]]]====(_)
                                                 ____0(0)    /       7 _/^
-                                                L__  _)  __/       / / 
-         A GOBLIN JUMPS YOU!                      /_V)__/ 1       / / 
+                                                L__  _)  __/       / /
+         A GOBLIN JUMPS YOU!                      /_V)__/ 1       / /
                                              ______/_      \____ / /
          He raises his club to attack..     /   .    \      _____/
                                            |  . _ .   | .__/|
                                            | . (_) .  |_____|
-                                           |  . . .   |$$$$$|  
+                                           |  . . .   |$$$$$|
                                             \________/$$$$$/ \
                                                  /  /\$$$$/\  \
                                              ___/  /      __|  \
@@ -499,13 +499,13 @@ GX_Monster_bandit() {
                                                        /""""""';   ____
                                                       d = / =  |3 /1--\\
                                                  _____| _____  |_|11 ||||
-         YOU ARE INEXPLICABLY                   /     \_\\\\\\_/  \111/// 
-         AMBUSHED BY A LOWLIFE CRIMINAL!       /  _ /             _\1// \ 
+         YOU ARE INEXPLICABLY                   /     \_\\\\\\_/  \111///
+         AMBUSHED BY A LOWLIFE CRIMINAL!       /  _ /             _\1// \
                                               /  ) (     |        \ 1|\  \
          "Hand over your expensive stuffs,   /   )(o____ (   ____o) 1|(  7
          puny poncer, or have your skull     \   \ :              . 1/  /
          cracked open by the mighty club!"    \\\_\'.     *       ;|___/
-                                                   /\____________/ 
+                                                   /\____________/
                                                   / #############/
                                                  (    ##########/ \
                                                 __\    \    \      )__
@@ -517,22 +517,22 @@ EOT
 GX_Item0() {
     clear
     cat <<"EOT"
-		
+
                           G I F T   O F   S I G H T
 
-                                .............. 
-                                ____________**:,.                      
-                             .-'  /      \  ``-.*:,..             
-                         _.-*    |  .jM O |     `-..*;,,              
-                        `-.      :   WW   ;       .-'                 
-                   ....    '._    \______/     _.'   .:              
+                                ..............
+                                ____________**:,.
+                             .-'  /      \  ``-.*:,..
+                         _.-*    |  .jM O |     `-..*;,,
+                        `-.      :   WW   ;       .-'
+                   ....    '._    \______/     _.'   .:
                       *::...  `-._ _________,;'    .:*
-                          *::...                 ..:*      
-                               *::............::*                  
-                                                                   
+                          *::...                 ..:*
+                               *::............::*
+
      You give aid to an old woman, carry her firewood and water from the
      stream, and after a few days she reveals herself as a White Witch!
-	
+
      She gives you a blessing and the Gift of Sight in return for your help.
      "The Gift of Sight," she says, "will aide you as you aided me."
 
@@ -549,12 +549,12 @@ GX_Item1() {
 
                   E M E R A L D   O F   N A R C O L E P S Y
                              .   .  ____  .   .
-                                .  /.--.\  .  
-                               .  //    \\  .  
+                                .  /.--.\  .
+                               .  //    \\  .
                             .  .  \\    //  .  .
-                                .  \\  //  .     
-                             .   .  \`//  .   .        
-                                     \/     
+                                .  \\  //  .
+                             .   .  \`//  .   .
+                                     \/
      You encounter a strange merchant from east of all maps who joins you
      for a stretch of road. He is a likeable fellow, so when he asks if he
      could share a campfire with you and finally get some much needed rest in
@@ -565,7 +565,7 @@ GX_Item1() {
      fetch you a good price at the market. Then you bid each other farewell.
 
      +1 Healing, Chance of Healing Sleep when you are resting.
-	
+
 EOT
     echo "$HR"
 }
@@ -575,19 +575,19 @@ GX_Item2() {
     cat <<"EOT"
 
                           G U A R D I A N   A N G E L
-                        .    . ___            __ ,  .            
-                      .      /* * *\  ,~-.  / * *\    .         
-                            /*   .:.\ l`; )/*    *\             
-                     .     |*  /\ :-,_,' ()*  /\  *|    .       
-                           \* |  ||\__   ~'  |  | */           
-                      .     \* \/ |  / /\ \  \ / */   .      
-                             \*     / ^  ^ \    */               
+                        .    . ___            __ ,  .
+                      .      /* * *\  ,~-.  / * *\    .
+                            /*   .:.\ l`; )/*    *\
+                     .     |*  /\ :-,_,' ()*  /\  *|    .
+                           \* |  ||\__   ~'  |  | */
+                      .     \* \/ |  / /\ \  \ / */   .
+                             \*     / ^  ^ \    */
                         .     )* _  ^|^|^|^^ _ *(    .
-                             /* /     |  |    \ *\ 
+                             /* /     |  |    \ *\
                        .    (*  \__,   | | .__/  *)   .
-                             \*  *_*_ // )*_*   */     
-                        .     \* /.,  `-'   .\* /    .  
-                          .    \/    .   .   `\/        
+                             \*  *_*_ // )*_*   */
+                        .     \* /.,  `-'   .\* /    .
+                          .    \/    .   .   `\/
                             .     .         .     .
                               .                 .
      You rescue a magical fairy caught in a cobweb, and in return she
@@ -604,20 +604,20 @@ GX_Item3() {
     cat <<"EOT"
 
                         F A S T   M A G I C   B O O T S
-                              _______  _______                                 
-                             /______/ /______/                            
-                              |   / __ |   / __                           
-                             /   /_(  \'  /_(  \                       
-                            (_________/________/       
-                                                                     
+                              _______  _______
+                             /______/ /______/
+                              |   / __ |   / __
+                             /   /_(  \'  /_(  \
+                            (_________/________/
+
      You are taken captive by a cunning gnome with magic boots, holding you
      with a spell that can only be broken by guessing his riddles.
      After a day and a night in captivity you decide to counter his riddles
      with one of your own: "What Creature of the Forest is terribly Red and
      Whiny, and Nothing Else without the Shiny?"
-     
+
      The gnome ponders to and fro, talking to himself and spitting, as he gets
-     more and more agitated. At last, furious, he demands "Show me!" and 
+     more and more agitated. At last, furious, he demands "Show me!" and
      releases you from the spell. Before he knows it you've stripped off his
      boots and are running away, magically quicker than your normal pace.
 
@@ -633,13 +633,13 @@ GX_Item4() {
 
                     Q U I C K   R A B B I T   R E A C T I O N
 
-                                   .^,^   
+                                   .^,^
                                 __/ ; /____
-                               / c   -'    `-.                            
-                              (___            )              
-                                  _) .--     _')                
-                                  `--`  `---'               
-                                                        
+                               / c   -'    `-.
+                              (___            )
+                                  _) .--     _')
+                                  `--`  `---'
+
      Having spent quite a few days and nights out in the open, you have grown
      accustomed to sleeping with one eye open and quickly react to the dangers
      of the forests, roads and mountains in the old world, that seek every
@@ -660,15 +660,15 @@ GX_Item5() {
 
                   F L A S K   O F   T E R R I B L E   O D O U R
                         /  /    * *  /    _\ \       ___ _
-                        ^ /   /  *  /     ____)     /,- \ \              
-                         /      __*_     / / _______   \ \ \             
-                 ,_,_,_,_ ^_/  (_+ _) ,_,_/_/       ) __\ \_\___        
-                /          /  / |  |/     /         \(   \7     \    
+                        ^ /   /  *  /     ____)     /,- \ \
+                         /      __*_     / / _______   \ \ \
+                 ,_,_,_,_ ^_/  (_+ _) ,_,_/_/       ) __\ \_\___
+                /          /  / |  |/     /         \(   \7     \
            ,   :'      \    ^ __| *|__    \    \  ___):.    ___) \____/)
-          / \  :.       |    / +      \  __\    \      :.              (\  
-        _//^\\  ;.      )___(~~~~~~~*~~)_\_____  )_______:___            }   
-        \ |  \\_) ) _____,)  \________/   /_______)          vvvVvvvVvvvV 
-         \|   `-.,'               
+          / \  :.       |    / +      \  __\    \      :.              (\
+        _//^\\  ;.      )___(~~~~~~~*~~)_\_____  )_______:___            }
+        \ |  \\_) ) _____,)  \________/   /_______)          vvvVvvvVvvvV
+         \|   `-.,'
      Under a steep rock wall you encounter a dragon pup's undiscovered carcass.
      You notice that its rotten fumes curiously scare away all wildlife and
      lowlife in the surrounding area.
@@ -686,13 +686,13 @@ GX_Item6() {
     cat <<"EOT"
 
                    T W O - H A N D E D    B R O A D S W O R D
-                       .   .   .  .  .  .  .  .  .  .  .  . 
+                       .   .   .  .  .  .  .  .  .  .  .  .
                   .  .   /]______________________________   .
-                .  ,~~~~~|/_____________________________ \   
+                .  ,~~~~~|/_____________________________ \
                 .  `=====|\______________________________/  .
-                  .  .   \]   .  .  .  .  .  .  .  .  .   .      
-                        .  .                                                           
-     From the thickest of forests you come upon and traverse a huge unmarked 
+                  .  .   \]   .  .  .  .  .  .  .  .  .   .
+                        .  .
+     From the thickest of forests you come upon and traverse a huge unmarked
      marsh and while crossing, you stumble upon trinkets, shards of weaponry
      and old equipment destroyed by the wet. Suddenly you realize that you are
      standing on the remains of a centuries old, long forgotten battlefield.
@@ -701,9 +701,9 @@ GX_Item6() {
      chariot, crashed on retreat, its knight pinned under one of its wheels.
      You salvage a beautiful piece of craftmanship from the wreckage;
      a powerful two-handed broadsword, untouched by time.
-		
+
      +1 Strength
-	
+
 EOT
     echo "$HR"
 }
@@ -713,19 +713,19 @@ GX_Item7() {
     cat <<"EOT"
 
                       S T E A D Y   H A N D   B R E W
-                              ___                                
-                             (___)            _  _  _ _             
-                              | |           ,(  ( )  ) )                
+                              ___
+                             (___)            _  _  _ _
+                              | |           ,(  ( )  ) )
                              /   \         (. ^ ( ^) ^ ^)_
-                            |     |        ( ~( _)- ~ )-_ \    
-                            |-----|         [_[[ _[[ _{  } :       
-                            |X X X|         [_[[ _[[ _{__; ;      
-                            |-----|         [_[[ _[[ _)___/                    
-              ______________|     |   _____ [_________]                 
+                            |     |        ( ~( _)- ~ )-_ \
+                            |-----|         [_[[ _[[ _{  } :
+                            |X X X|         [_[[ _[[ _{__; ;
+                            |-----|         [_[[ _[[ _)___/
+              ______________|     |   _____ [_________]
              |     | >< |   \___ _| _(     )__
-             |     | >< |    __()__           )_                              
-             |_____|_><_|___/     (__          _)                      
-                                    (_________)      
+             |     | >< |    __()__           )_
+             |_____|_><_|___/     (__          _)
+                                    (_________)
 
      Through the many years of travel you have found that your acquired taste
      of a strong northlandic brew served cool keeps you on your toes.
@@ -744,7 +744,7 @@ MapCreate() { # FILL THE $MAP file using either default or custom map
     else # Load default map
 	# Dirty fix for MacOS - it doesn't understand 	'MAP=$(cat <<EOT'
 	# I know that it's unreadable, but I can't find better variant now :( #kstn
-	MAP='       A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R 
+	MAP='       A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R
    #=========================================================================#
  1 )   x   x   x   x   x   @   .   .   .   T   x   x   x   x   x   x   @   T (
  2 )   x   x   H   x   @   @   .   @   @   x   x   x   x   x   @   @   @   @ (
@@ -769,9 +769,9 @@ MapCreate() { # FILL THE $MAP file using either default or custom map
 }
 
 MapCreateCustom() { # Map template generator (CLI arg function)
-    [[ ! -d "$GAMEDIR" ]] && Die "Please create $GAMEDIR/ directory before running" 
+    [[ ! -d "$GAMEDIR" ]] && Die "Please create $GAMEDIR/ directory before running"
     cat <<"EOT" > "${GAMEDIR}/rename_to_CUSTOM.map"
-       A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R 
+       A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R
    #=========================================================================#
  1 )   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z (
  2 )   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z   Z (
@@ -866,7 +866,7 @@ GX_Map() { # Used in MapNav()
      	IFS="-" read -r "ITEM2C_X" "ITEM2C_Y" <<< "${HOTZONE[0]}" # Retrieve item map positions e.g. 1-15 >> X=1 Y=15
 	# Remember, the player won't necessarily find items in HOTZONE array's sequence
     else # Lazy fix for awk - it falls when see undefined variable #kstn
-	ITEM2C_Y=0 && ITEM2C_X=0 
+	ITEM2C_Y=0 && ITEM2C_X=0
     fi
 
     clear
@@ -877,21 +877,21 @@ GX_Map() { # Used in MapNav()
       # place "o" (player) on map
       if (NR == '$(( MAP_Y + 2 ))') {  # lazy fix for ASCII borders
          if ('$MAP_X' == 18 ) { $'$(( MAP_X + 1 ))'="o ("; }
-         else                 { $'$(( MAP_X + 1 ))'="o";   } 
+         else                 { $'$(( MAP_X + 1 ))'="o";   }
          }
       # if player has Gift-Of-Sight and not all items are found
       if ( '${CHAR_ITEMS}' > 0 && '${CHAR_ITEMS}' < 8) {
-         # place ITEM2C on map 
+         # place ITEM2C on map
          # ITEM2C_Y+2 and ITEM2C_X+1 - fix for boards
  	 if (NR == '$(( ITEM2C_Y + 2 ))') {
             if ( '$ITEM2C_X' == 18 ) { $'$(( ITEM2C_X + 1 ))'="~ ("; }
-            else                     { $'$(( ITEM2C_X + 1 ))'="~";   } 
+            else                     { $'$(( ITEM2C_X + 1 ))'="~";   }
             }
          }
       # All color on map sets here
       if ('${COLOR}' == 1 ) {
          # Terminal color scheme bugfix
-         if ( NR == 1 ) { gsub(/^/, "'$(printf "%s" "${RESET}")'"); } 
+         if ( NR == 1 ) { gsub(/^/, "'$(printf "%s" "${RESET}")'"); }
          # colorise "o" (player) and "~" (ITEM2C)
 	 if ( NR > 2 && NR < 19 ) {
  	    gsub(/~/, "'$(printf "%s" "${YELLOW}~${RESET}")'")
@@ -903,7 +903,7 @@ GX_Map() { # Used in MapNav()
 }
 # SAVE CHARSHEET
 SaveCurrentSheet() { # Saves current game values to CHARSHEET file (NOT overwriting, just replace defined variables)
-    local CHAR_TMP=$(awk '{ 
+    local CHAR_TMP=$(awk '{
     if (/^CHARACTER:/)  { $0 = "CHARACTER: " "'$CHAR'" ;}
     if (/^RACE:/)       { $2 = "'$CHAR_RACE'"}
     if (/^BATTLES:/)    { $2 = "'$CHAR_BATTLES'"}
@@ -929,7 +929,7 @@ BiaminSetup() { # Used in MainMenu()
 	# I don't know why, but "read -r VAR1 VAR2 VAR3 <<< $(awk $FILE)" not works :(
 	# But one local variable at any case is better that to open one file eight times
 	local CHAR_TMP=$(awk '
-                  { 
+                  {
                    if (/^CHARACTER:/)  { RLENGTH = match($0,/: /);
                   	                 CHARACTER = substr($0, RLENGTH+2); }
                    if (/^RACE:/)       { RACE= $2 }
@@ -941,7 +941,7 @@ BiaminSetup() { # Used in MainMenu()
                    if (/^KILLS:/)      { KILLS = $2 }
                    if (/^HOME:/)       { HOME = $2 }
                  }
-                 END { 
+                 END {
                  print CHARACTER ";" RACE ";" BATTLES ";" EXPERIENCE ";" LOCATION ";" HEALTH ";" ITEMS ";" KILLS ";" HOME ;
                  }' $CHARSHEET )
 	IFS=";" read -r CHAR CHAR_RACE CHAR_BATTLES CHAR_EXP CHAR_GPS CHAR_HEALTH CHAR_ITEMS CHAR_KILLS CHAR_HOME <<< "$CHAR_TMP"
@@ -963,14 +963,14 @@ BiaminSetup() { # Used in MainMenu()
 	    4 ) echo "You chose to be a HOBBIT" ;;
 	    1 | * ) CHAR_RACE=1 && echo "You chose to be a HUMAN" ;;	# Not very good, but works :) #kstn
 	esac
-	
+
 	CHAR_GPS="$START_LOCATION"
 	CHAR_HOME="$START_LOCATION"
 
 	# If there IS a CUSTOM.map file, ask where the player would like to start
 	if [ -f "$GAMEDIR/CUSTOM.map" ] ; then
 	    read -p " HOME location for custom maps (ENTER for default $START_LOCATION): " "CHAR_LOC"
-	    if [[ ! -z "$CHAR_LOC" ]]; then # Use user input as start location.. but first SANITY CHECK		
+	    if [[ ! -z "$CHAR_LOC" ]]; then # Use user input as start location.. but first SANITY CHECK
 		read CHAR_LOC_LEN CHAR_LOC_A CHAR_LOC_B <<< $(awk '{print length($0) " " substr($0,0,1) " " substr($0,2)}' <<< "$CHAR_LOC")
 		(( CHAR_LOC_LEN > 3 )) && Die " Error! Too many characters in $CHAR_LOC\n Start location is 2-3 alphanumeric chars [A-R][1-15], e.g. C2 or P13"
 		(( CHAR_LOC_LEN < 1 )) && Die " Error! Too few  characters in $CHAR_LOC\n Start location is 2-3 alphanumeric chars [A-R][1-15], e.g. C2 or P13"
@@ -990,7 +990,7 @@ BiaminSetup() { # Used in MainMenu()
 	fi
 	echo " Creating fresh character sheet for $CHAR ..."
 	SaveCurrentSheet
-    fi # Finish check whether CHAR exists if not create CHARSHEET 
+    fi # Finish check whether CHAR exists if not create CHARSHEET
     sleep 2 # merged sleep from 'load char' and 'new char'
     # Set abilities according to race (each equal to 12 except FLEE)
     case $CHAR_RACE in
@@ -1004,9 +1004,9 @@ BiaminSetup() { # Used in MainMenu()
 	((HEALING++))			# Adjusting for Emerald of Narcolepsy
 	if (( CHAR_ITEMS >= 4 )); then
 	    ((FLEE++))			# Adjusting for Fast Magic Boots
-	    if (( CHAR_ITEMS >= 7 )); then		
+	    if (( CHAR_ITEMS >= 7 )); then
 		((STRENGTH++))		# Adjusting for Broadsword
-		if (( CHAR_ITEMS >= 8 )); then	
+		if (( CHAR_ITEMS >= 8 )); then
 		    ((ACCURACY++))	# Adjusting for Steady Hand Brew
 		fi
 	    fi
@@ -1059,7 +1059,7 @@ TodaysDate() {
 ################### MENU SYSTEM #################
 MainMenu() {
     while (true) ; do # Forever, because we exit through CleanUp()
-	GX_Banner 		
+	GX_Banner
 	read -sn 1 -p "      (P)lay      (L)oad game      (H)ighscore      (C)redits      (Q)uit" TOPMENU_OPT # CENTERED to 79px
 	case "$TOPMENU_OPT" in
 	    p | P ) GX_Banner ;
@@ -1079,7 +1079,7 @@ HighscoreRead() {
     local i=0
     # Read values from highscore file (BashFAQ/001)
     while IFS=";" read -r highEXP highCHAR highRACE highBATTLES highKILLS highITEMS highDATE highMONTH highYEAR; do
-	(( ++i > 10 )) && break # i++ THEN check (( i > 10 )) 
+	(( ++i > 10 )) && break # i++ THEN check (( i > 10 ))
 	case "$highRACE" in
 	    1 ) highRACE="Human" ;;
 	    2 ) highRACE="Elf" ;;
@@ -1098,7 +1098,7 @@ HighScore() { # Used in MainMenu()
     # Show 10 highscore entries or die if $HIGHSCORE is empty
     [[ -s "$HIGHSCORE" ]] && HighscoreRead || echo -e " The highscore list is unfortunately empty right now.\n You have to play some to get some!"
     echo -e "\n                   Press the any key to go to (M)ain menu" # CENTERED to 79px
-    read -sn 1 
+    read -sn 1
 }   # Return to MainMenu()
 
 Credits() { # Used in MainMenu()
@@ -1125,7 +1125,7 @@ PrepareLicense() { # gets licenses and concatenates into "LICENSE" in $GAMEDIR
 	CC=$(curl -s "http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.txt" || "")
     fi
     # Concatenate files into LICENSE file and remove extra files
-    if [[ $GPL && $CC ]] ; then 
+    if [[ $GPL && $CC ]] ; then
 	echo -e "\t\t   BACK IN A MINUTE BASH CODE LICENSE:\t\t\t(Q)uit\n
 $HR
 $GPL
@@ -1155,7 +1155,7 @@ License() { # Used in Credits()
     GX_BiaminTitle
     if [ -z "$PAGER" ] ; then
 	if [[ $(which less 2>/dev/null) ]]; then # try less
-	    PAGER=$(which less)                
+	    PAGER=$(which less)
 	elif [[ $(which more 2>/dev/null) ]]; then # or try more
 	    PAGER=$(which more)
 	fi
@@ -1175,7 +1175,7 @@ More info:    <${WEBURL}about#license>
                Press any key to go back to main menu!" ;; # I've removed \t for 80x24 compability #kstn
 	esac
     fi
-}   # Return to Credits() 
+}   # Return to Credits()
 
 LoadGame() { # Used in MainMenu()
     local i=0 # Count of all sheets. We could use ${#array_name[@]}, but I'm not sure if MacOS'll understand that. So let's invent bicycle!
@@ -1194,22 +1194,22 @@ Press any key to return to (M)ain menu and try (P)lay" # St. Anykey - patron of 
 	GX_LoadGame
 	for (( a=1; a <= LIMIT ; a++)); do
 	    [[ ! ${SHEETS[((a + OFFSET))]} ]] && break
-	    awk '{ # Character can consist from two and more words - not only "Corum" but "Corum Jhaelen Irsei" for instance 
+	    awk '{ # Character can consist from two and more words - not only "Corum" but "Corum Jhaelen Irsei" for instance
                    if (/^CHARACTER:/)  { RLENGTH = match($0,/: /);
                   	                 CHARACTER = substr($0, RLENGTH+2); }
                    if (/^RACE:/)       { if ($2 == 1 ) { RACE="Human"; }
                		                 if ($2 == 2 ) { RACE="Elf"; }
              		                 if ($2 == 3 ) { RACE="Dwarf"; }
-            		                 if ($2 == 4 ) { RACE="Hobbit";} 
+            		                 if ($2 == 4 ) { RACE="Hobbit";}
                                         }
                    if (/^LOCATION:/)   { LOCATION = $2 }
                    if (/^HEALTH:/)     { HEALTH = $2 }
                    if (/^ITEMS:/)      { ITEMS = $2 }
                    if (/^EXPERIENCE:/) { EXPERIENCE = $2 }
                  }
-                 END { 
-                 print " "'$a' ". \"" CHARACTER "\" the " RACE " (" HEALTH " HP, " EXPERIENCE " EXP, " ITEMS " items, sector " LOCATION ")" 
-                 }' ${SHEETS[((a + OFFSET))]} 
+                 END {
+                 print " "'$a' ". \"" CHARACTER "\" the " RACE " (" HEALTH " HP, " EXPERIENCE " EXP, " ITEMS " items, sector " LOCATION ")"
+                 }' ${SHEETS[((a + OFFSET))]}
 	done
 	(( i > LIMIT)) && echo -en "\n You have more than $LIMIT characters. Use (P)revious or (N)ext to list," # Don't show it if there are chars < LIMIT
 	echo -e "\n Enter NUMBER of character to load or any letter to return to (M)ain Menu: "
@@ -1247,7 +1247,7 @@ HotzonesDistribute() { # Used in Intro() and ItemWasFound()
     read -r MAP_X MAP_Y  <<< $(awk '{ print substr($0, 1 ,1); print substr($0, 2); }' <<< "$CHAR_GPS")
     MAP_X=$(awk '{print index("ABCDEFGHIJKLMNOPQR", $0)}' <<< "$MAP_X") # converts {A..R} to {1..18}
     ITEMS_2_SCATTER=$(( 8 - CHAR_ITEMS ))
-    HOTZONE=() # Reset HOTZONE  
+    HOTZONE=() # Reset HOTZONE
     while (( ITEMS_2_SCATTER > 0 )) ; do
 	ITEM_YX # Randomize ITEM_X and ITEM_Y
 	(( ITEM_X ==  MAP_X )) && (( ITEM_Y == MAP_Y )) && continue         # reroll if HOTZONE == CHAR_GPS
@@ -1284,7 +1284,7 @@ ItemWasFound() { # Used in NewSector()
 	read -sn 1 -t 1 && COUNTDOWN=-1 || ((COUNTDOWN--))
     done
     # Re-distribute items to increase randomness if char haven't all 8 items.
-    (( ++CHAR_ITEMS < 8 )) && HotzonesDistribute # Increase CHAR_ITEMS , THEN check (( CHAR_ITEMS < 8 ))    
+    (( ++CHAR_ITEMS < 8 )) && HotzonesDistribute # Increase CHAR_ITEMS , THEN check (( CHAR_ITEMS < 8 ))
     SaveCurrentSheet # Save CHARSHEET items
     NODICE=1         # No fighting if item is found..
 }   # Return to NewSector()
@@ -1341,7 +1341,7 @@ DisplayCharsheet() { # Used in NewSector() and FightMode()
 	4 ) local RACE="(Hobbit)" ;;
     esac
     case "$SCENARIO" in
-	H ) local PLACE="(Home)" ;; 
+	H ) local PLACE="(Home)" ;;
 	x ) local PLACE="(Mountain)" ;;
 	. ) local PLACE="(Road)" ;;
 	T ) local PLACE="(Town)" ;;
@@ -1359,11 +1359,11 @@ DisplayCharsheet() { # Used in NewSector() and FightMode()
  Enemies Slain:             $CHAR_KILLS ($MURDERSCORE%)
  Items found:               $CHAR_ITEMS of 8
  Special Skills:            Healing $HEALING, Strength $STRENGTH, Accuracy $ACCURACY, Flee $FLEE
- 
+
 EOF
 	read -sn 1 -p "        (D)isplay Race Info        (A)ny key to continue        (Q)uit"  CHARSHEET_OPT  # CENTERED to 79px
 	case "$CHARSHEET_OPT" in
-		d | D ) GX_Races && read -sn1 -p "                          Press any letter to return" ;;    
+		d | D ) GX_Races && read -sn1 -p "                          Press any letter to return" ;;
 		q | Q ) CleanUp ;;
 	esac
 }
@@ -1406,9 +1406,9 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
     LUCK=0      # Used to assess the match in terms of EXP..
     FIGHTMODE=1	# Anti-cheat bugfix for CleanUp: Adds penalty for CTRL+C during fights!
 
-    RollDice 20 # Determine enemy type    
+    RollDice 20 # Determine enemy type
     case "$SCENARIO" in
-	H ) ENEMY="chthulu" ;; 
+	H ) ENEMY="chthulu" ;;
 	x ) (( DICE <= 10 )) && ENEMY="orc"     || (( DICE >= 16 )) && ENEMY="goblin" || ENEMY="varg" ;;
 	. ) (( DICE <= 12 )) && ENEMY="goblin"  || ENEMY="bandit" ;;
 	T ) (( DICE <= 15 )) && ENEMY="bandit"  || ENEMY="mage"   ;;
@@ -1424,8 +1424,8 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 
     case "$ENEMY" in
 	bandit )  EN_STRENGTH=2 ; EN_ACCURACY=4 ; EN_FLEE=7 ; EN_HEALTH=30  ; EN_FLEE_THRESHOLD=18 ; PL_FLEE_EXP=5   ; EN_FLEE_EXP=10  ; EN_DEFEATED_EXP=20   ;;
-	goblin )  EN_STRENGTH=3 ; EN_ACCURACY=3 ; EN_FLEE=5 ; EN_HEALTH=30  ; EN_FLEE_THRESHOLD=15 ; PL_FLEE_EXP=10  ; EN_FLEE_EXP=15  ; EN_DEFEATED_EXP=30   ;; 
-	orc )     EN_STRENGTH=4 ; EN_ACCURACY=4 ; EN_FLEE=4 ; EN_HEALTH=80  ; EN_FLEE_THRESHOLD=40 ; PL_FLEE_EXP=15  ; EN_FLEE_EXP=25  ; EN_DEFEATED_EXP=50   ;; 
+	goblin )  EN_STRENGTH=3 ; EN_ACCURACY=3 ; EN_FLEE=5 ; EN_HEALTH=30  ; EN_FLEE_THRESHOLD=15 ; PL_FLEE_EXP=10  ; EN_FLEE_EXP=15  ; EN_DEFEATED_EXP=30   ;;
+	orc )     EN_STRENGTH=4 ; EN_ACCURACY=4 ; EN_FLEE=4 ; EN_HEALTH=80  ; EN_FLEE_THRESHOLD=40 ; PL_FLEE_EXP=15  ; EN_FLEE_EXP=25  ; EN_DEFEATED_EXP=50   ;;
 	varg )    EN_STRENGTH=4 ; EN_ACCURACY=3 ; EN_FLEE=3 ; EN_HEALTH=80  ; EN_FLEE_THRESHOLD=60 ; PL_FLEE_EXP=25  ; EN_FLEE_EXP=50  ; EN_DEFEATED_EXP=100  ;;
 	mage )    EN_STRENGTH=5 ; EN_ACCURACY=3 ; EN_FLEE=4 ; EN_HEALTH=90  ; EN_FLEE_THRESHOLD=45 ; PL_FLEE_EXP=35  ; EN_FLEE_EXP=75  ; EN_DEFEATED_EXP=150  ;;
 	chthulu ) EN_STRENGTH=6 ; EN_ACCURACY=5 ; EN_FLEE=1 ; EN_HEALTH=500 ; EN_FLEE_THRESHOLD=35 ; PL_FLEE_EXP=200 ; EN_FLEE_EXP=500 ; EN_DEFEATED_EXP=1000 ;;
@@ -1445,7 +1445,7 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 	NEXT_TURN="en"
     else
 	echo "$CHAR has the initiative!"
-	NEXT_TURN="pl" 
+	NEXT_TURN="pl"
     fi
 
     sleep 2
@@ -1461,7 +1461,7 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 	    sleep 2
 	    echo "You WERE KILLED by the $ENEMY, and now you are dead..."
 	    sleep 2
-	    if (( CHAR_EXP >= 1000 )) && (( CHAR_HEALTH > -15 )); then    
+	    if (( CHAR_EXP >= 1000 )) && (( CHAR_HEALTH > -15 )); then
 		echo "However, your $CHAR_EXP Experience Points relates that you have"
 		echo "learned many wondrous and magical things in your travels..!"
 		(( CHAR_HEALTH += 20 ))
@@ -1488,16 +1488,16 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 		    GX_Death
 		    echo " The $TODAYS_DATE_STR:"
 		    echo " In such a short life, this sorry $FUNERAL_RACE gained $CHAR_EXP Experience Points."
-		    echo " We honor $CHAR with $COUNTDOWN secs silence." 
+		    echo " We honor $CHAR with $COUNTDOWN secs silence."
     		    read -sn 1 -t 1 && COUNTDOWN=-1 || ((COUNTDOWN--))
 		done
 		unset FUNERAL_RACE COUNTDOWN
 		echo "$CHAR_EXP;$CHAR;$CHAR_RACE;$CHAR_BATTLES;$CHAR_KILLS;$CHAR_ITEMS;$TODAYS_DATE;$TODAYS_MONTH;$TODAYS_YEAR" >> "$HIGHSCORE"
 		rm -f "$CHARSHEET" # A sense of loss is important for gameplay :)
 		unset CHARSHEET CHAR CHAR_RACE CHAR_HEALTH CHAR_EXP CHAR_GPS SCENARIO CHAR_BATTLES CHAR_KILLS CHAR_ITEMS
-		DEATH=1 
+		DEATH=1
 	    fi
-	    unset FIGHTMODE 
+	    unset FIGHTMODE
 	    break # Zombie fix for all variants of death and resurrection
 	fi
 
@@ -1505,7 +1505,7 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 
 	case "$NEXT_TURN" in
 	    pl )  # Player's turn
-		echo -n "It's your turn, press (A)ny key to (R)oll or (F) to Flee " 
+		echo -n "It's your turn, press (A)ny key to (R)oll or (F) to Flee "
 		read -sn 1 "FIGHT_PROMPT"
 		FightTable
 		if [[ "$FIGHT_PROMPT" == "f" || "$FIGHT_PROMPT" == "F" ]] ; then # Player tries to flee!
@@ -1550,7 +1550,7 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 		    else
 			echo -n "$DICE > $ACCURACY ) You missed!"
 		    fi
-		fi 
+		fi
 		NEXT_TURN="en"
 		sleep 3
 		;;
@@ -1558,7 +1558,7 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 		if (( EN_HEALTH < EN_FLEE_THRESHOLD )) && (( EN_HEALTH < CHAR_HEALTH )); then # Enemy tries to flee
 		    FightTable
 		    RollDice 20
-		    echo "Rolling for enemy flee .. ( D20 < eF )"		    
+		    echo "Rolling for enemy flee .. ( D20 < eF )"
 		    sleep 2
 		    if (( DICE < EN_FLEE )); then
 			EchoFightFormula 20 lt eF
@@ -1582,31 +1582,31 @@ FightMode() {	# FIGHT MODE! (secondary loop for fights)
 		    EchoFightFormula 6 times eS
 		    DAMAGE=$(( DICE * EN_STRENGTH ))
 		    #    -en used here to avoid "jumping" from >24 blocks in terminal
-		    echo -en "$DICE x $EN_STRENGTH ) The $ENEMY's blow hits you with $DAMAGE points! [-$DAMAGE HP]" 
+		    echo -en "$DICE x $EN_STRENGTH ) The $ENEMY's blow hits you with $DAMAGE points! [-$DAMAGE HP]"
 		    (( CHAR_HEALTH -= DAMAGE ))
 		    SaveCurrentSheet
 		else
 		    echo "$DICE > $EN_ACCURACY ) The $ENEMY misses!"
 		fi
 		NEXT_TURN="pl"
-		sleep 3		
+		sleep 3
 		;;
 	esac
     done # FIGHT LOOP ends
 
-    # After the figthing 
+    # After the figthing
     if (( DEATH != 1 )) ; then   # VICTORY!
 	if (( LUCK == 2 )); then   # died but saved by guardian angel or 1000 EXP
 	    echo "When you come to, the $ENEMY has left the area ..."
 	elif (( LUCK == 1 )); then # ENEMY managed to FLEE
-	    echo -n "You defeated the $ENEMY and gained $EN_FLEE_EXP Experience Points!" 
+	    echo -n "You defeated the $ENEMY and gained $EN_FLEE_EXP Experience Points!"
 	    (( CHAR_EXP += EN_FLEE_EXP ))
 	elif (( LUCK == 3 )); then # PLAYER managed to FLEE during fight!
 	    echo -e "\nYou got away while the $ENEMY wasn't looking, gaining $PL_FLEE_EXP Experience Points!"
 	    (( CHAR_EXP += PL_FLEE_EXP ))
 	else			   # ENEMY was slain!
 	    FightTable
-	    echo "You defeated the $ENEMY and gained $EN_DEFEATED_EXP Experience Points!" 
+	    echo "You defeated the $ENEMY and gained $EN_DEFEATED_EXP Experience Points!"
 	    (( CHAR_EXP += EN_DEFEATED_EXP ))
 	    (( CHAR_KILLS++ ))
 	fi
@@ -1652,7 +1652,7 @@ Rest() {  # Used in NewSector()
 # THE GAME LOOP
 
 RollForEvent() { # Used in NewSector() and Rest()
-    echo -e "Rolling for event: D${DICE_SIZE} <= $1\nD${DICE_SIZE}: $DICE" 
+    echo -e "Rolling for event: D${DICE_SIZE} <= $1\nD${DICE_SIZE}: $DICE"
     sleep 2
     (( DICE <= $1 )) && return 0 || return 1
 }   # Return to NewSector() or Rest()
@@ -1671,7 +1671,7 @@ GX_Place() {     # Used in NewSector() and MapNav()
 
 # THE GAME LOOP
 NewSector() { # Used in Intro()
-    while (true) # While (player-is-alive) :) 
+    while (true) # While (player-is-alive) :)
     do
 	# Find out where we are - fixes LOCATION in CHAR_GPS "A1" to a place on the MapNav "X1,Y1"
 	read -r MAP_X MAP_Y  <<< $(awk '{ print substr($0, 1 ,1); print substr($0, 2); }' <<< "$CHAR_GPS")
@@ -1682,10 +1682,10 @@ NewSector() { # Used in Intro()
 	(( CHAR_ITEMS < 8 )) && [[ $(grep -E "(^| )$MAP_X-$MAP_Y( |$)" <<< "${HOTZONE[@]}") ]] && ItemWasFound
 
 	if [[ $NODICE ]] ; then # Do not attack player at the first turn of after finding item
-	    unset NODICE 
+	    unset NODICE
 	else
 	    GX_Place "$SCENARIO"
-	    RollDice 100        # Find out if we're attacked 
+	    RollDice 100        # Find out if we're attacked
 	    case "$SCENARIO" in # FightMode() if RollForEvent return 0
 		H ) RollForEvent 1  && FightMode ;;
 		x ) RollForEvent 50 && FightMode ;;
@@ -1697,7 +1697,7 @@ NewSector() { # Used in Intro()
 	    esac
 	    (( DEATH == 1 )) && break	# Break if player was slain
 	fi
-	
+
 	while (true); do # GAME ACTIONS MENU BAR
 	    GX_Place "$SCENARIO"
 	    echo -n "        (C)haracter        (R)est        (M)ap and Travel        (Q)uit" # CENTERED to 79px
@@ -1724,16 +1724,16 @@ Intro() { # Used in BiaminSetup()
                        else { LEN = 12 - length(STR); for (i=0; i < LEN; i++) { STR = STR "_" } }
                        print substr(toupper(STR), 1,1) substr(STR, 2); }' <<< "$CHAR")
     TodaysDate	       # Fetch today's date in Warhammer calendar (Used in DisplayCharsheet() and FightMode() )
-    MapCreate          # Create session map in $MAP  
+    MapCreate          # Create session map in $MAP
     (( CHAR_ITEMS < 8 )) && HotzonesDistribute # Place items randomly in map
     local COUNTDOWN=60
     GX_Intro
-    echo "                        Press any letter to continue" 
+    echo "                        Press any letter to continue"
     while (( COUNTDOWN >= 0 )); do
     	read -sn 1 -t 1 && COUNTDOWN=-1 || ((COUNTDOWN--))
     done
     unset COUNTDOWN
-    
+
     NODICE=1 # Do not roll on first section after loading/starting a game in NewSector()
     NewSector
 }
@@ -1775,14 +1775,14 @@ Announce() { # Simply outputs a 160 char text you can cut & paste to social medi
 
     highCHAR=$(awk '{ print substr(toupper($0), 1,1) substr($0, 2); }' <<< "$highCHAR") # Capitalize
     ANNOUNCEMENT="$highCHAR fought $highBATTLES, $highKILLS victoriously, won $highEXP EXP and $highITEMS. This $ADJECTIVE $highRACE was finally slain the $highDATE of $highMONTH in the $highYEAR Cycle."
-    
+
     GX_HighScore
 
     echo "ADVENTURE SUMMARY to copy and paste to your social media of choice:"
     echo -e "\n$ANNOUNCEMENT\n" | fmt
     echo "$HR"
 
-    ANNOUNCEMENT_LENGHT=$(awk '{print length($0)}' <<< "$ANNOUNCEMENT" ) 
+    ANNOUNCEMENT_LENGHT=$(awk '{print length($0)}' <<< "$ANNOUNCEMENT" )
     (( ANNOUNCEMENT_LENGHT > 160 )) && echo "Warning! String longer than 160 chars ($ANNOUNCEMENT_LENGHT)!"
 }
 
@@ -1792,10 +1792,10 @@ We need to configure terminal colors for the map!
 Please note that a colored symbol is easier to see on the world map.
 Back in a minute was designed for white text on black background.
 Does \033[1;33mthis text appear yellow\033[0m without any funny characters?
-Do you want color? No to DISABLE, Yes or ENTER to ENABLE color: " 
+Do you want color? No to DISABLE, Yes or ENTER to ENABLE color: "
     read COLOR_CONFIG
     case "$COLOR_CONFIG" in
-	N | n | NO | No | no | DISABLE | disable ) 
+	N | n | NO | No | no | DISABLE | disable )
 	    COLOR=0 ; echo "Disabling color! Edit $GAMEDIR/config to change this setting." ;;
 	* ) COLOR=1 ; echo "Enabling color!" ;;
     esac
@@ -1804,7 +1804,7 @@ Do you want color? No to DISABLE, Yes or ENTER to ENABLE color: "
 }
 
 CreateBiaminLauncher() {
-    grep -q 'biamin' "$HOME/.bashrc" && Die "Found existing launcher in $HOME/.bashrc.. skipping!" 
+    grep -q 'biamin' "$HOME/.bashrc" && Die "Found existing launcher in $HOME/.bashrc.. skipping!"
     BIAMIN_RUNTIME=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) # $0 is a powerful beast, but will sometimes fail..
     echo "This will add $BIAMIN_RUNTIME/biamin to your .bashrc"
     read -n 1 -p "Install Biamin Launcher? [Y/N]: " LAUNCHER
@@ -1813,7 +1813,7 @@ CreateBiaminLauncher() {
 	        echo -e "\nDone. Run 'source \$HOME/.bashrc' to test 'biamin' command." ;;
 	* ) echo -e "\nDon't worry, not changing anything!";;
     esac
-}        
+}
 
 #                           END FUNCTIONS                              #
 #                                                                      #
@@ -1862,7 +1862,7 @@ case "$1" in
 	REPO_SRC="https://gitorious.org/back-in-a-minute/$REPO_EDITION/raw/biamin.sh"
 	GX_BiaminTitle;
 	sed 's/https:\/\///' <<< "Retrieving $REPO_SRC .."
-	REPO=$( mktemp $GAMEDIR/repo.XXXXXX ) 
+	REPO=$( mktemp $GAMEDIR/repo.XXXXXX )
 	if [[ $(which wget 2>/dev/null) ]]; then # Try wget, automatic redirect
 	    wget -q -O "$REPO" "$REPO_SRC" || Die "DOWNLOAD ERROR: No internet with wget"
 	elif [[ $(which curl 2>/dev/null) ]]; then # Try curl, -L - for redirect
@@ -1874,9 +1874,9 @@ case "$1" in
 	REPO_VERSION=$( sed -n -r '/^VERSION=/s/^VERSION="([^" ]*) .*".*$/\1/p' "$REPO" )
 	CURRENT_VERSION=$( sed -r 's/^([^" ]*) .*$/\1/' <<< "$VERSION")
 	echo "Your current Back in a Minute game is version ${VERSION}"
-	# Compare versions $1 and $2. Versions should be [0-9]+.[0-9]+.[0-9]+. ... 
+	# Compare versions $1 and $2. Versions should be [0-9]+.[0-9]+.[0-9]+. ...
 	if [[ "$CURRENT_VERSION" == "$REPO_VERSION" ]] ; then
-	    RETVAL=0 
+	    RETVAL=0
 	else
 	    IFS="\." read -a VER1 <<< "$CURRENT_VERSION"
 	    IFS="\." read -a VER2 <<< "$REPO_VERSION"
@@ -1903,7 +1903,7 @@ case "$1" in
 			mv "$BIAMIN_RUNTIME" "${BIAMIN_RUNTIME}.bak" # backup current file
 			mv "$REPO" "$BIAMIN_RUNTIME"
 			chmod +x "$BIAMIN_RUNTIME" || Die "PERMISSION ERROR: Couldnt make biamin executable"
-			echo "Run 'sh $BIAMIN_RUNTIME --install' to add launcher!" 
+			echo "Run 'sh $BIAMIN_RUNTIME --install' to add launcher!"
 			echo "Current file moved to ${BIAMIN_RUNTIME}.bak" ;;
 		    * ) echo -e "\nNot updating! Removing temporary file .."; rm -f "$REPO" ;;
 		esac ;;
